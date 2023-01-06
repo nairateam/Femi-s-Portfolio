@@ -1,0 +1,102 @@
+.wrap_p{
+    display: flex;
+    text-align: left;
+    padding: 2rem 0;
+    overflow: hidden;
+    position: relative;
+    /* z-index: 1; */
+}
+.wrap_p:nth-child(2){
+    flex-direction: row-reverse;
+}
+.wrap_p:nth-child(4){
+    flex-direction: row-reverse;
+}
+.wrap_p:nth-child(6){
+    flex-direction: row-reverse;
+}
+.wrap_p:nth-child(8){
+    flex-direction: row-reverse;
+}
+.single_project{
+    overflow: hidden;
+}
+
+.wrap_p h1{
+    background: linear-gradient(126.06deg, rgba(0, 102, 0, 0.4) 28.93%, rgba(0, 0, 204, 0.4) 117.03%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 4rem;
+    position: absolute;
+    opacity: 0.7;
+    top: -5px;
+    /* z-index: -1; */
+}
+.single_project h1:nth-child(2){
+    display: none;
+}
+
+.project_item{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    background: linear-gradient(126.06deg, rgba(0, 102, 0, 0.1) 28.93%, rgba(0, 0, 204, 0.1) 117.03%);
+    backdrop-filter: blur(4.08696px);
+    border-radius: 50px;
+    width: 60vw;
+    min-height: 10rem;
+}
+
+.project_item .p_item{
+    flex: 1 1 0;
+    overflow: hidden;
+}
+
+.project_item .p_item > img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.button_wrap > button{
+    padding: 0.6rem 1.4rem;
+    color: #FFF;
+    background: linear-gradient(126.06deg, #006600 28.93%, #0000CC 117.03%);
+    border-radius: 35px;
+}
+.button_wrap > button:nth-child(2){
+    background: none;
+    border: 1px solid#006600;
+}
+
+.p_item > h4{
+    background: linear-gradient(126.06deg, #006600 28.93%, #0000CC 117.03%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.p_item > h2{
+    color: #FFF;
+    padding: 1rem 0;
+}
+
+.p_item > p{
+    padding-top: 0.5rem;
+    color: #E6DEDC;
+}
+
+@media (max-width: 800px) {
+    .project_item{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .project_item .p_item > img{
+       object-fit: contain;
+    }
+}

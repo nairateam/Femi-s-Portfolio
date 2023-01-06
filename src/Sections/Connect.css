@@ -1,0 +1,30 @@
+.connect_flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 2rem;
+}
+.connect_item{
+    flex: 1 1 0;
+    overflow: hidden;
+}
+.connect_item > p{
+    color: #AEAEAE;
+    padding: 1rem 0;
+    padding-bottom: 2rem;
+    line-height: 1.6;
+    text-align: left;
+}
+.connect_item img{
+    max-width: 400px;
+}
+
+@media (max-width: 800px) {
+    .connect_flex{
+        flex-direction: column-reverse;
+    }
+    .connect_item img{
+        max-width: 300px;
+    }
+}

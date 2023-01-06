@@ -1,0 +1,161 @@
+.hero_section{
+    padding: 2rem;
+    padding-top: 2rem;
+}
+
+.hero_eclipse{
+    background: linear-gradient(126.06deg, rgba(0, 102, 0, 0.2) 28.93%, rgba(0, 0, 204, 0.2) 117.03%);
+    border: 2.64017px solid #000000;
+    filter: blur(429.028px);
+    transform: rotate(-38.84deg);
+    position: absolute;    
+}
+
+.hero_flex{
+    display: flex;
+    flex: 1 1 0;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+.hero_flex .hero_item{
+    flex: 1 1 0;
+    color: #FFF;
+    text-align: left;
+    overflow: hidden;
+}
+/* .hero_flex .hero_item:nth-child(2){
+    text-align: center;
+} */
+.hero_item .femi_ban{
+    padding: 0.8rem;
+    border: 1.4px solid;
+    border-radius: 202px;
+    border-color: #0000CCBF #006600BF;
+    filter: grayscale(0.1);
+    transition: 0.3s;
+    max-width: 300px;
+}
+.hero_item .femi_ban:hover{
+    filter: grayscale(0);
+}
+.hero_item .hero_stacks{
+    position: relative;
+    text-align: right;
+    overflow: hidden;
+}
+.hero_stacks .stacks{
+    display: flex;
+    gap: 0.8rem;
+    right: 150px;
+    bottom: 100px;
+    padding: 1rem;
+    position: absolute;
+    border-radius: 100px;
+    border: 1px solid #000;
+    background: linear-gradient(126.06deg, #006600aa 28.93%, #0000cc92 117.03%);
+    background: rgba(0, 0, 0, 0.607);
+    overflow: hidden;
+}
+.stacks > img{
+    width: 30px;
+}
+
+.hero_section h2{
+    font-size: 3rem;
+}
+.hero_section p{
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    color: #AEAEAE;
+}
+.hero_section h3{
+    font-size: 1.8rem;
+    background: linear-gradient(126.06deg, #006600 28.93%, #1F1FFF 117.03%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.button_wrap{
+    padding-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+@media (max-width: 970px) {
+    .hero_stacks .stacks{
+        right: 150px;
+        bottom: 100px;
+        padding: 1rem;
+        z-index: 3;
+    }
+    .stacks > img{
+        width: 25px;
+    }
+}
+@media (max-width: 946px) {
+    .hero_stacks .stacks{
+        right: 150px;
+        bottom: 100px;
+        padding: 1rem;
+    }
+    .stacks > img{
+        width: 25px;
+    }
+}
+@media (max-width: 900px) {
+    .hero_stacks .stacks{
+        right: 100px;
+        bottom: 100px;
+        padding: 1rem;
+    }
+    .stacks > img{
+        width: 25px;
+    }
+}
+
+@media (max-width: 820px) {
+    .hero_section{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .hero_flex{
+        text-align: center;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .hero_section h2, img{
+        font-size: 1.8rem;
+    }
+    .hero_section h2 img{
+        width: 20px;
+    }
+    .hero_section > p{
+        font-size: 1.1rem;
+        padding: 0.5rem;
+    }
+    .hero_section h3{
+        font-size: 1.4rem;
+    }
+    .hero_flex .hero_item{
+        text-align: center;
+    }
+    .button_wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero_item .hero_stacks{
+        text-align: right;
+    }
+    .hero_stacks .stacks{
+        right: 0px;
+        bottom: 20px;
+    }
+    .hero_stacks .femi_ban{
+        max-width: 250px;
+    }
+}

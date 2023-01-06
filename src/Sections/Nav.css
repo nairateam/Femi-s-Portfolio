@@ -1,0 +1,117 @@
+.nav__wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 2rem 2%;
+    /* position: fixed; */
+    gap: 2rem;
+    border-radius: 100px;
+    z-index: 10;
+    background: linear-gradient(126.06deg, rgba(0, 102, 0, 0.2) 28.93%, rgba(0, 0, 204, 0.2) 117.03%);
+}
+.nav__wrap span{
+    display: none;
+}
+.logo_join{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255, 255, 255, 0.833);
+}
+.logo_join > h3{
+    z-index: -10;
+    font-size: 1.2rem;
+}
+
+.nav__list {
+    display: flex;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.nav__item > a{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.socials{
+    display: flex;
+    gap: 1rem;
+    color: #FFF;
+}
+.menu_nav{
+    display: none;
+}
+
+@media (max-width: 1028px) {
+    .nav__list{
+        display: none;
+    }
+    .socials{
+        display: none;
+    }
+    .nav__wrap span{
+        display: block;
+    }
+    .menu_nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: left;
+        gap: 1.4rem;
+        background-color: #000;
+        color: #FFF;
+        transition: 1s;
+        transform: translateX(100vw);
+        z-index: 15;
+        text-align: center;
+        justify-content: space-around;
+    }
+    .nav__menu__list{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .nav__menu__list > .nav__menu__item > a{
+        background: linear-gradient(126.06deg, #006600 28.93%, #1F1FFF 117.03%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: #FFF;
+        font-size: 2rem;
+    }
+    .menu__socials{
+        display: flex;
+        gap: 2rem;
+    }
+    .menu_connect{
+        background: linear-gradient(126.06deg, #006600 28.93%, #1F1FFF 117.03%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    .menu_nav > span{
+        position: fixed;
+        right: 2rem;
+        top: 2rem;
+    }
+     .responsive_nav{
+        transform: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .nav__wrap{
+        padding: 0.5rem;
+        gap: 4rem;
+        border-radius: 100px;
+    }
+    .nav__wrap > .logo_join > img{
+        width: 45px;
+    }
+}
