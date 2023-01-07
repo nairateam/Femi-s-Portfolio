@@ -47,7 +47,7 @@ const Hero = () => {
                     initial={{opacity:0, y:30}}
                     animate={{opacity:1, y:0}}
                     transition={{delay:0.8, duration:1}}
-                >I am excited to bring my skills and experience to a company that values innovation and creativity. With a passion for building visually appealing and user-friendly websites, I am confident in my ability to turn complex project requirements into intuitive and functional designs.</motion.p>
+                >I am specialized in building visually appealing products with great user experience, highly confident in my ability to turn complex project requirements into functional and scalable products.</motion.p>
                 <motion.div 
                     initial={{opacity:0}}
                     animate={{opacity:1}}
