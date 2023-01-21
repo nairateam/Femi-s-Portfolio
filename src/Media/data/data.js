@@ -12,7 +12,7 @@ const projects = [
         title: "SolanaCash (Web3)",
         image: solana,
         desc: "Solana Cash is a decentralized cross-chain global payment system. I developed the UI interface.",
-        source: "https://",
+        source: "https://github.com/nairateam/Solana-Cash",
         live: "https://solana-cash.vercel.app/"
 
     },
