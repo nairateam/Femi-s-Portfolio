@@ -5,6 +5,7 @@ import bolu from '../projects/boluu.webp'
 import g6 from '../projects/g6.webp'
 import cast from '../projects/casttt.webp'
 import ivc from '../projects/ivc.webp'
+import royal from '../projects/royal.png'
 
 const projects = [
     {
@@ -45,11 +46,11 @@ const projects = [
     },
     {
         id: '05',
-        title: "GoldenSix Hotel",
-        image: g6,
-        desc: "This is a hotel booking system built for a 4star hotel. Both backend and frontend was developed using Wordpress & Elementor builder",
+        title: "Royalsglow Skincare",
+        image: royals,
+        desc: "This is a brand that's into sales of skincare products. This was designed using Elementor and Woocommerce.",
         source: "https://",
-        live: "https://goldensixhotel.com"
+        live: "https://royalsglow.com/"
 
     },
     {
